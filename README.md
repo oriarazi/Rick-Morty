@@ -8,5 +8,5 @@ Instructions to run the project:
   Now on the Login page, we have two users:
   - username: admin password: 123
   - username: user password: 123
-  For logging out and switching between users, just refresh the page
+For logging out and switching between users, just refresh the page
     
