@@ -1,0 +1,54 @@
+.character__card {
+    font-size: 1.2rem;
+    width: 20em;
+    aspect-ratio: 2/1;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 1rem;
+    color: black;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    overflow: hidden;
+
+    &[character-status] {
+        &::before {
+            content: attr(character-status);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--secondary-bg-color);
+            width: fit-content;
+            font-weight: bold;
+        }
+    }
+
+    &:hover {
+        background-color: aliceblue;
+        color: black;
+
+
+        .character__card__photo {
+            filter: brightness(1);
+        }
+    }
+
+    .character__card__title {
+        margin: 0;
+        flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .character__card__photo {
+        border-radius: 50%;
+        filter: brightness(0.8);
+        width: 25%;
+        object-fit: cover;
+        vertical-align: middle;
+
+    }
+}

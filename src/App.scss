@@ -1,0 +1,10 @@
+#root {
+  width: 100vw; // fallback
+  width: 100svw;
+  min-height: 100vh; // fallback
+  min-height: 100svh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
